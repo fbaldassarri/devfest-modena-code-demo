@@ -33,6 +33,8 @@ Prepare the environment
 
 (base) user@host:~/$ conda activate auto-round 
 
+(auto-round) user@host:~/$ conda install pytorch torchvision torchaudio cpuonly -c pytorch
+
 (auto-round) user@host:~/$ wget https://github.com/intel/auto-round/archive/refs/tags/v0.3.tar.gz
 
 (auto-round) user@host:~/$ tar -xvzf v0.3.tar.gz
