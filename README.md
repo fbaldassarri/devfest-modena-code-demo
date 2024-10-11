@@ -65,14 +65,40 @@ Run scripts
 ```
 **Inference**
 
-Intel® Extension for PyTorch (IPEX)
+Intel® Extension for PyTorch (IPEX) [windows 11]
 
 ```
-(base) user@host:~/devfest-modena-code-demo$ conda create -n ipex python=3.11 -y
+(base) user@host:~/$ conda create -n ipex-xpu python=3.9 -y
 
-(base) user@host:~/devfest-modena-code-demo$ conda activate ipex
+(base) user@host:~/$ conda activate ipex-xpu
 
-(ipex) user@host:~/devfest-modena-code-demo$ conda install libuv
+(ipex-xpu) user@host:~/$ conda install libuv -y
+
+```
+Install Intel® oneAPI Base Toolkit 2024.1
+https://www.intel.com/content/www/us/en/developer/tools/oneapi/base-toolkit-download.html?operatingsystem=window
+
+```
+(ipex-xpu) user@host:~/$ call "C:\Program Files (x86)\Intel\oneAPI\setvars.bat"
+
+(ipex-xpu) user@host:~/$ pip install https://intel-extension-for-pytorch.s3.amazonaws.com/ipex_dev/xpu/torch-2.1.0a0%2Bgit04048c2-cp39-cp39-win_amd64.whl
+
+(ipex-xpu) user@host:~/$ pip install https://intel-extension-for-pytorch.s3.amazonaws.com/ipex_dev/xpu/intel_extension_for_pytorch-2.1.30%2Bgit6661060-cp39-cp39-win_amd64.whl
+
+(ipex-xpu) user@host:~/$ git clone https://github.com/intel/intel-extension-for-transformers.git intel-extension-for-transformers -b xpu_lm_head 
+
+(ipex-xpu) user@host:~/$ cd intel-extension-for-transformers 
+
+(ipex-xpu) user@host:~/intel-extension-for-transformers$ pip install -v .
+
+(ipex-xpu) user@host:~/intel-extension-for-transformers$ pip install transformers==4.35
+
+(ipex-xpu) user@host:~/intel-extension-for-transformers$ pip install huggingface_hub==0.22
+
+(ipex-xpu) user@host:~/intel-extension-for-transformers$ pip install lm_eval==0.4.2 --no-deps
+
+(ipex-xpu) user@host:~/intel-extension-for-transformers$ pip install accelerate datasets diffusers
+
 ```
 
 Optional for full neural-compressor installation: 
@@ -99,11 +125,7 @@ Install IPEX for Intel® Core™ Core™ Processors, Intel® Xeon® processors, 
 
 (ipex) user@host:~/devfest-modena-code-demo$ pip install transformers==4.45.0
 
-NO (ipex) user@host:~/devfest-modena-code-demo$ pip install accelerate==0.33.0
-
-NO (ipex) user@host:~/devfest-modena-code-demo$ pip install trl
-
-pip install numpy==1.24.1
+(ipex) user@host:~/devfest-modena-code-demo$ pip install numpy==1.24.1
 
 ```
 
