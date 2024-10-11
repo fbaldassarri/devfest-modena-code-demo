@@ -95,6 +95,10 @@ Install IPEX for Intel® Core™ Core™ Processors, Intel® Xeon® processors, 
 
 (ipex) user@host:~/devfest-modena-code-demo$ python -m pip install oneccl_bind_pt --extra-index-url https://pytorch-extension.intel.com/release-whl/stable/cpu/us/
 
+(ipex) user@host:~/devfest-modena-code-demo$ pip install Werkzeug>=3.0.0
+
+(ipex) user@host:~/devfest-modena-code-demo$ pip install transformers==4.45.0
+
 ```
 
 IPEX-LLM 
