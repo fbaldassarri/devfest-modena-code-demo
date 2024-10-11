@@ -99,9 +99,11 @@ Install IPEX for Intel® Core™ Core™ Processors, Intel® Xeon® processors, 
 
 (ipex) user@host:~/devfest-modena-code-demo$ pip install transformers==4.45.0
 
-(ipex) user@host:~/devfest-modena-code-demo$ pip install accelerate==0.33.0
+NO (ipex) user@host:~/devfest-modena-code-demo$ pip install accelerate==0.33.0
 
-(ipex) user@host:~/devfest-modena-code-demo$ pip install trl
+NO (ipex) user@host:~/devfest-modena-code-demo$ pip install trl
+
+pip install numpy==1.24.1
 
 ```
 
