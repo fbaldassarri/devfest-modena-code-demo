@@ -1,0 +1,6 @@
+transformers
+torch
+huggingface[cli]
+auto-round==3.0
+intel-extension-for-pytorch
+
