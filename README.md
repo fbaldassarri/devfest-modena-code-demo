@@ -99,25 +99,12 @@ Install IPEX for Intel® Core™ Core™ Processors, Intel® Xeon® processors, 
 
 (ipex) user@host:~/devfest-modena-code-demo$ pip install transformers==4.45.0
 
-```
+(ipex) user@host:~/devfest-modena-code-demo$ pip install accelerate==0.33.0
 
-IPEX-LLM 
-
-```
-(base) user@host:~/devfest-modena-code-demo$ conda create -n ipex-llm python=3.11 -y
-
-(base) user@host:~/devfest-modena-code-demo$ conda activate ipex-llm
-
-(ipex-llm) user@host:~/devfest-modena-code-demo$ conda install libuv -y
-
-(ipex-llm) user@host:~/devfest-modena-code-demo$ pip install --pre --upgrade ipex-llm[xpu] --extra-index-url https://pytorch-extension.intel.com/release-whl/stable/xpu/us/
-
-(ipex-llm) user@host:~/devfest-modena-code-demo$ pip install transformers==4.45.0
-
-(ipex-llm) user@host:~/devfest-modena-code-demo$ pip install accelerate==0.33.0
-
-(ipex-llm) user@host:~/devfest-modena-code-demo$ pip install trl 
+(ipex) user@host:~/devfest-modena-code-demo$ pip install trl
 
 ```
+
+
 
 
